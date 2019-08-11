@@ -1,0 +1,242 @@
+.productViewer {
+	box-sizing: border-box;
+	position: fixed;
+	left: 300px;
+	top: 170px;
+
+	width: 0px;
+	height: 0px;
+	box-shadow: 0px 0px 200px black;
+	overflow: hidden;
+	z-index: 5;
+	background: white;
+}
+
+	.exitIcon {
+		box-sizing: border-box;
+		position: absolute;
+		display: block;
+		right: 5px;
+		top: 5px;
+		height: 25px;
+		width: 25px;
+	}
+/* ---------------------------------------------DIV PRODUCT VIEWER----------------------------------------------- */
+
+
+.slideShow {
+	box-sizing: border-box;
+	position: static;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	background-color: lightblue;
+}
+
+	.imgContainer {
+		box-sizing: border-box;
+		overflow: hidden;
+		width: 500%;
+		height: 600px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+		.imgOfSlide {
+			box-sizing: border-box;
+			display: inline-block;
+			float: left;
+			margin: 0px;
+			padding:  0px;
+			width: 20%;
+			/* height: 600px; */
+		}
+
+/* ---------------------------------------------SLIDESHOW BANNER--------------------------------------------- */
+
+.menuBar {
+	box-sizing: border-box;
+	width: 100%;
+	height: 70px;
+	background-color: #EBEBEB;
+	box-shadow: 0px 20px 80px black;
+}
+
+	.menuBar > ul {
+		box-sizing: border-box;
+		display: block;
+		list-style: none;
+		width: 90%;
+		height: 70px;
+		padding: 0px;
+		margin:  auto auto;
+		/* background: maroon; */
+	}
+
+		.menuBar > ul > li {
+			/* style of LAPTOP, PHONE on menu */
+			box-sizing: border-box;
+			display: inline-block;
+			float: left;
+			width: 15%;
+			height: 70px;
+			padding-top: 22px;
+			margin: 0px;
+
+			text-align: center;
+			font-size: 21px;
+			color: #414141;
+			font-family: "Bn-Bold";
+			letter-spacing: 0.1em;
+			/* background: white; */
+		}
+			.menuBar > ul > li:hover {
+				color: #F1C12C;
+			}
+
+			.menuBar > ul > li:first-child {
+				width: 25%;
+				color: #9FA1A3;
+			}
+			
+/* ---------------------------------------------MENUBAR--------------------------------------------- */
+
+	.shop {
+		box-sizing: border-box;
+		display: table;
+		width: 100%;
+		margin: 0px;
+		padding: 7%;
+	}
+
+		.brand {
+			box-sizing: border-box;
+			display: table;
+			float: left;
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			/* background-color: lightblue; */
+		}
+
+			.brandName {
+				box-sizing: border-box;
+				display: block;
+				float: left;
+				width: 17%;
+				height: 350px;
+				margin: 0px;
+				padding-top: 125px;
+
+				text-align: center;
+				font-family: "Bn-Bold";
+				color: white;
+				font-size: 29px;
+				letter-spacing: 3px;
+
+				background-image:url(image/brandBack.jpg);
+				background-size: 100% 100%;
+				/* background: linear-gradient(to bottom left, #2D2D2D, black); */
+			}
+
+			.listProduct {
+				box-sizing: border-box;
+				display: table;
+				float: left;
+				width: 83%;
+				height: 350px;
+
+				margin: 0px;
+				padding: 0px;
+				/* background-color: black; */
+			}
+
+				.listProduct > li {
+					/* style of each product */
+					box-sizing: border-box;
+					position: relative;
+					display: inline-block;
+					float: left;
+					width: 25%;
+					height: 350px;
+
+					margin: 0px;
+					padding: 0px;
+					
+					background-size: 100% 100%;
+				}
+					.infoProduct {
+						box-sizing: border-box;
+
+						width: 100%;
+						height: 250px;
+						padding-top: 10px;
+
+						/* name of product */
+						text-align: center;
+						font-family: 'Bn-Bold';
+						font-size: 19px;
+						letter-spacing: 4px;
+						word-spacing: 3px;
+						color: #2F2D2D;
+					}
+						.infoProduct > img {
+							box-sizing: border-box;
+							display: block;
+							width: 70%;
+							margin: 0 auto;
+							
+							/* background: white; */
+						}
+						.infoProduct > span {
+							/* price of product */
+							box-sizing: border-box;
+							display: block;
+							font-size: 17px;
+							letter-spacing: 3px;
+							margin: 0 auto;
+							margin-top: 37px;
+							/*space of words*/
+						}
+
+					.addToCart {
+						/* style of add to cart */
+						box-sizing: border-box;
+						position: absolute;
+						bottom: 0px;
+						width: 100%;
+						height: 0px;
+						background-color: black;
+						/*background-color: #F9C72F;*/
+						overflow: hidden;
+						transition: height 0.5s;
+					}
+						.addToCart > span {
+							box-sizing: border-box;
+							display: block;
+							width: 100%;
+							text-align: center;
+							font-family: 'Bn-Regular';
+							font-size: 18px;
+							letter-spacing: 2px;
+							word-spacing: 2px;
+							color: white;
+
+							margin: 0px auto;
+							margin-top: 5px;
+						}
+
+					.listProduct > li:hover{
+						box-shadow: 5px 5px 20px 3px #333333;
+						z-index: 1;
+					}
+
+					.listProduct > li:hover > div.addToCart{
+						height: 30px;
+					}
+					.listProduct > li:hover > div.infoProduct > img{
+						transition: transform 0.5s;
+						transform:scale(1.1,1.1);
+					}
+
+/* ---------------------------------------------SHOP----------------------------------------------- */

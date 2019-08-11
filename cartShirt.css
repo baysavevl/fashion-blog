@@ -1,0 +1,217 @@
+.topText {
+	box-sizing: border-box;
+	position: static;
+	width: 100%;
+	height: 260px;
+}
+
+	.topText > span {
+		box-sizing: border-box;
+		position: absolute;
+		display: block;
+		top: 200px;
+		width: 100%;
+		
+		text-align: center;
+		font-family: 'Bn-Bold';
+		font-size: 60px;
+		letter-spacing: 10px;
+		word-spacing: 5px;
+		/* background-color: white; */
+	}
+
+.cartContainer {
+	box-sizing: border-box;
+	display: table;
+	width: 100%;
+	margin: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 4%;
+	padding-bottom: 7%;
+
+	/* background-color: white; */
+}
+
+	.cart {
+		box-sizing: border-box;
+		display: table;
+		width: 100%;
+		margin: 0px;
+		padding: 3%;
+		
+		background-color: #EBEBEB;
+		box-shadow: 30px 30px 30px 0px #686867;
+	}
+
+		.listProduct {
+			box-sizing: border-box;
+			display: table;
+			float: left;
+			width: 100%;
+			height: 280px;
+
+			margin: 0px;
+			padding: 0px;
+			margin-bottom: 20px;
+			/* background-color: black; */
+		}
+
+				.listProduct > li {
+					/* style of each product */
+					box-sizing: border-box;
+					position: relative;
+					display: inline-block;
+					float: left;
+					width: 20%;
+					height: 350px;
+
+					margin: 0px;
+					padding: 0px;
+					background-color:#FFF;
+					
+					background-size: 100% 100%;
+				}
+					.infoProduct {
+						box-sizing: border-box;
+
+						width: 100%;
+						height: 250px;
+						padding-top: 25px;
+
+						/* name of product */
+						text-align: center;
+						font-family: 'Bn-Bold';
+						font-size: 19px;
+						letter-spacing: 4px;
+						word-spacing: 3px;
+						color: #2F2D2D;
+					}
+						.infoProduct > img {
+							box-sizing: border-box;
+							display: block;
+							width: 70%;
+							margin: 0 auto;
+							
+							/* background: white; */
+						}
+						.infoProduct > span {
+							/* price of product */
+							box-sizing: border-box;
+							display: block;
+							font-size: 17px;
+							letter-spacing: 3px;
+							margin: 0 auto;
+							margin-top: 30px;
+						}
+					.removeProduct {
+						/* style of add to cart */
+						box-sizing: border-box;
+						position: absolute;
+						bottom: 0px;
+						width: 100%;
+						height: 0px;
+
+						background-color: #F9C72F;
+						overflow: hidden;
+						transition: height 0.5s;
+					}
+						.removeProduct > span {
+							box-sizing: border-box;
+							display: block;
+							width: 100%;
+							text-align: center;
+							font-family: 'Bn-Regular';
+							font-size: 18px;
+							letter-spacing: 2px;
+							word-spacing: 2px;
+							color: white;
+
+							margin: 0px auto;
+							margin-top: 5px;
+						}
+
+					.listProduct > li:hover{
+						box-shadow: 5px 5px 20px 3px #333333;
+						z-index: 1;
+					}
+
+					.listProduct > li:hover > div.removeProduct{
+						height: 30px;
+					}
+					.listProduct > li:hover > div.infoProduct > img{
+						transition: transform 0.5s;
+						transform:scale(1.1,1.1);
+					}
+
+		.endDiv {
+			box-sizing: border-box;
+			position: relative;
+			display: block;
+			float: left;
+			width: 100%;
+			height: 130px;
+
+			margin: 0px;
+			padding: 0px;
+			margin-top: 20px;
+			/* background-color: white; */
+		}
+		.shopping {
+			box-sizing: border-box;
+			position: absolute;
+			width: 20%;
+			padding: 14px 0px;
+
+			text-align: center;
+			font-size: 14px;
+			color: #414141;
+			font-family: 'Bn-Bold';
+			word-spacing: 3px;
+			letter-spacing: 4px;
+			border: 3px solid #414141;
+		}
+		.sumView {
+			box-sizing: border-box;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 30%;
+			padding-top: 10px;
+
+			text-align: left;
+			font-size: 20px;
+			color: #8B8B8B;
+			font-family: 'Bn-Bold';
+			word-spacing: 30px;
+			letter-spacing: 5px;
+			/* background-color: maroon; */
+		}
+		.sumView > span {
+			/* float: right; */
+			display: block;
+			box-sizing: border-box;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+
+			font-size: 36px;
+			color: black;
+			letter-spacing: 8px;
+		}
+		.checkout {
+			box-sizing: border-box;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			width: 30%;
+			padding: 14px 0px;
+
+			text-align: center;
+			font-size: 20px;
+			color: #F9C72C;
+			font-family: 'Bn-Bold';
+			word-spacing: 3px;
+			letter-spacing: 8px;
+			background-color: #414141;
+		}

@@ -1,0 +1,148 @@
+		@font-face {
+		font-family: 'Bn-Bold';
+		src: url('font/BebasNeue Bold.ttf');
+		}
+		@font-face {
+		font-family: 'Bn-Regular';
+		src: url('font/BebasNeue Regular.ttf');
+		}
+
+		.mainBody{
+			margin: 0px;
+			overflow: hidden;
+			
+		}
+
+		a:visited {
+			color: inherit;
+			text-decoration: none;
+		}
+		a:link {
+			color: inherit;
+			text-decoration: none;
+		}
+		.fashion {
+			box-sizing: border-box;
+			float: left;
+			position: relative;
+			width: 50%;
+			height: 50%;
+			overflow: hidden;
+			background-image:url(image/banner/0072263800_9_1_1.jpg);
+			background-position: center;
+			background-size: 100%;
+			
+		}
+		.contact {
+			box-sizing: border-box;
+			float: left;
+			position: relative;
+			width: 25%;
+			height: 50%;
+			overflow: hidden;
+			background-image:url(image/linking%20pics/Capture4.PNG);
+			background-position: center;
+			background-size: 100%;
+			
+		}
+		.shop {
+			box-sizing: border-box;
+			float: left;
+			position: relative;
+			width: 50%;
+			height: 50%;
+			overflow: hidden;
+			background-image:url(image/banner/look9-look9.st.jpg);
+			opacity:0.7;
+			background-size: 100%;
+			background-position: center;
+		}
+		.lookbook {
+			box-sizing: border-box;
+			float: left;
+			position: relative;
+			width: 50%;
+			height: 50%;
+			
+			overflow: hidden;
+			background-image:url(image/banner/CollectionMensBanner_2.jpg);
+			background-size: 100%;
+			background-position: center;
+		}
+		.about {
+			box-sizing: border-box;
+			float: left;
+			position: relative;
+			width: 25%;
+			height: 50%;
+			overflow: hidden;
+			background-image:url(image/banner/aw17layerin-top-9.jpg);
+			background-size: 100%;
+			background-position: center;
+			
+		}
+
+		div:hover {
+			box-shadow: 5px 5px 50px 3px white;
+			z-index: 1;
+			transition: all 1s;
+			background-size: 110%;
+		}
+
+		.fashion > img {
+			width: 100%;
+		}
+		.fashion > span
+		{
+			font-family: 'Bn-Bold';
+			display: block;
+			color: WHITE;
+			font-size: 60px;
+			margin-top: 25%;
+			margin-left: 25%;
+			letter-spacing: 4px;
+		}
+		
+		.contact > span {
+			font-family: 'Bn-Bold';
+			display: block;
+			color: WHITE;
+			font-size: 60px;
+			margin-top: 170px;
+			margin-left: 50px;
+			letter-spacing: 4px;
+		}
+		
+		.shop > span {
+			font-family: 'Bn-Bold';
+			display: block;
+			color: WHITE;
+			font-size: 60px;
+			margin-top: 170px;
+			margin-left: 50px;
+			letter-spacing: 4px;
+		}
+		.about > span {
+			font-family: 'Bn-Bold';
+			display: block;
+			color: WHITE;
+			font-size: 60px;
+			margin-top: 170px;
+			margin-left: 125px;
+			letter-spacing: 4px;
+		}
+
+		.lookbook > span {
+			font-family: 'Bn-Bold';
+			display: block;
+			color: WHITE;
+			font-size: 40px;
+			margin-top: 190px;
+			margin-left: 100px;
+			letter-spacing: 4px;
+		}
+		div:hover > span {
+			transition: all 3s;
+			transform: scale(1.1, 1.1);
+			text-decoration: underline;
+		}
